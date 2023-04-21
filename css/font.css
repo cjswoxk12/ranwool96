@@ -1,0 +1,170 @@
+body{
+    font-family: 'Pretendard';
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.text-white{
+    color:white
+}
+.text-center{
+    text-align: center;
+}
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+h1{ font-size: 50px;}
+.hd{
+    border : 1px solid #ccc;
+    border-radius: 50px;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#gnb li{
+    padding-left: 1em;
+    font-weight: 700;
+}
+
+#gnb  li  a{
+    transition: 0.5s;
+}
+/* 가짜선택자 */
+
+#gnb li:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: 0.5s;
+}
+#gnb li:nth-child(1):hover a{
+    color: rgb(93, 236, 255);
+}
+#gnb li:nth-child(2):hover a{
+    background-color: rgb(251, 255, 0);
+}
+#gnb li:nth-child(3):hover a{
+    color : rgb(33, 255, 99);
+}
+
+#gnb li:nth-child(1):after{
+    background-color: rgb(255, 0, 21);
+}
+#gnb li:nth-child(2):after{
+    background-color: rgb(255, 0, 21);
+}
+#gnb li:nth-child(3):after{
+    background-color: rgb(255, 136, 0);
+}
+
+#gnb  li:hover::after{
+    width: 100%;
+    display: block;
+    height: 2px;
+}
+
+/* 가짜선택자 */
+
+.child1, .child2, .child3{
+    height: calc(50vh - 80px);
+    align-items: center;
+    justify-content: center;
+}
+
+.child1{
+    background-color: yellow;  
+}
+.child2{
+    background-color: rgb(125, 125, 111);  
+}
+.child3{
+    background-color: rgb(29, 29, 27);  
+}
+
+.ft{
+    padding: 2em;
+}
+
+
+.sns{
+   justify-content: center;
+}
+
+.sns li{ padding: 8px; border-radius: 20px; margin: 0 10px;}
+
+.sns li:first-child{
+    background-color: rgb(126, 16, 101);
+}
+.sns li:nth-child(2){
+    background-color: rgb(23, 23, 163); 
+}
+.sns li:last-child{
+    background-color: rgb(164, 0, 0);    
+}
+
+.hd h1 svg{
+    height: 1.5rem;
+    display: block;
+    width: 222px;
+    height: 52px;
+}
+.hd h1 a{
+    display: block;
+}
+.hd h1 a:hover svg path{
+    fill: red;
+}
+
+.hd h1 a:hover svg path:nth-child(2){
+    fill: rgb(255, 187, 0);
+    transition: 0.5s;
+}
+.hd h1 a:hover svg path:nth-child(3){
+    fill : rgb(214, 226, 43);
+    transition: 1s;
+}
+.hd h1 a:hover svg path:nth-child(4){
+    fill : rgb(19, 151, 63);
+    transition: 1.2s;
+}
+.hd h1 a:hover svg path:nth-child(5){
+    fill : rgb(0, 17, 255);
+    transition: 1.5s;
+}
+.hd h1 a:hover svg path:nth-child(6){
+    fill : rgb(76, 8, 165);
+    transition: 1.8s;
+}
+.hd h1 a:hover svg path:nth-child(7){
+    fill : rgb(204, 0, 255);
+    transition: 2s;
+}
+
+
+
+#about h2:hover{
+    color: rgb(0, 255, 106);
+    background-color: rgba(0, 0, 0, 0.349);
+    font-size: 10em;
+    transition: 1s;
+    border : 1px solid #ccc;
+    border-radius: 30px;
+}
+#work h2:hover{
+    color: rgb(0, 255, 106);
+    background-color: rgba(0, 0, 0, 0.541);
+    font-size: 10em;
+    transition: 1s;
+    border : 1px solid #ccc;
+    border-radius: 50px;
+}
